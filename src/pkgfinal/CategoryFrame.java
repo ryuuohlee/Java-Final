@@ -27,22 +27,32 @@ public class CategoryFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        CategoryTitle = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         CategoryLabel = new javax.swing.JLabel();
         CategoryComboBox = new javax.swing.JComboBox<>();
         MaxBudgeLabel = new javax.swing.JLabel();
         MaxBudgetField = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         SaveButton = new javax.swing.JButton();
-        CategoryTitle = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        CategoryLabel.setText("Category");
+        CategoryTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        CategoryTitle.setText("Category");
 
-        CategoryComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Utilies", "Groceries", "Restaurants", "Gas", "Miscellaneous" }));
+        jPanel1.setLayout(new java.awt.GridLayout(4, 2));
+
+        CategoryLabel.setText("Category");
+        jPanel1.add(CategoryLabel);
+
+        CategoryComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Utilities", "Groceries", "Restaurants", "Gas", "Miscellaneous" }));
+        jPanel1.add(CategoryComboBox);
 
         MaxBudgeLabel.setText("Max Budget ($)");
+        jPanel1.add(MaxBudgeLabel);
 
         MaxBudgetField.setText("1000");
         MaxBudgetField.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +60,10 @@ public class CategoryFrame extends javax.swing.JFrame {
                 MaxBudgetFieldActionPerformed(evt);
             }
         });
+        jPanel1.add(MaxBudgetField);
+        jPanel1.add(jLabel2);
+        jPanel1.add(jLabel3);
+        jPanel1.add(jLabel4);
 
         SaveButton.setText("Save");
         SaveButton.addActionListener(new java.awt.event.ActionListener() {
@@ -57,61 +71,27 @@ public class CategoryFrame extends javax.swing.JFrame {
                 SaveButtonActionPerformed(evt);
             }
         });
-
-        CategoryTitle.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        CategoryTitle.setText("Category");
-
-        jLabel1.setText("Total Expenses This Month ($) ");
-
-        jTextField1.setText("850");
+        jPanel1.add(SaveButton);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(CategoryTitle)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(SaveButton)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(26, 26, 26)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(MaxBudgeLabel)
-                                        .addComponent(CategoryLabel))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(CategoryComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(MaxBudgetField)
-                                        .addComponent(jTextField1))))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel1)))
-                .addGap(118, 118, 118))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CategoryTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(206, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(49, 49, 49)
+                .addGap(31, 31, 31)
                 .addComponent(CategoryTitle)
-                .addGap(72, 72, 72)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CategoryLabel)
-                    .addComponent(CategoryComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(MaxBudgeLabel)
-                    .addComponent(MaxBudgetField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addComponent(SaveButton)
-                .addGap(48, 48, 48))
+                .addGap(52, 52, 52)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         pack();
@@ -169,7 +149,9 @@ public class CategoryFrame extends javax.swing.JFrame {
     private javax.swing.JLabel MaxBudgeLabel;
     private javax.swing.JTextField MaxBudgetField;
     private javax.swing.JButton SaveButton;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

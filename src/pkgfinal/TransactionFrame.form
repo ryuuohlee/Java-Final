@@ -23,41 +23,39 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="SaveButton3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="CategoryLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="DateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="TransactionNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="AmountLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="CategoryComboBox2" max="32767" attributes="0"/>
-                          <Component id="DateField" max="32767" attributes="0"/>
-                          <Component id="TNameField" max="32767" attributes="0"/>
-                          <Component id="AmountField" max="32767" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="SaveButton3" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="CategoryLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="DateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="TransactionNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AmountLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="CategoryComboBox2" max="32767" attributes="0"/>
+                              <Component id="DateField" max="32767" attributes="0"/>
+                              <Component id="TNameField" max="32767" attributes="0"/>
+                              <Component id="AmountField" min="-2" pref="145" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="107" max="32767" attributes="0"/>
+              <EmptySpace pref="253" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
+              <EmptySpace pref="75" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TransactionNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TNameField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -77,9 +75,9 @@
                   <Component id="AmountLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="AmountField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Component id="SaveButton3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

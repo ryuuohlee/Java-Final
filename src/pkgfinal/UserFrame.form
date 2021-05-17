@@ -26,31 +26,10 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jPanel1" min="-2" pref="274" max="-2" attributes="0"/>
                   <Component id="UserTitleLabel" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="UserIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="FNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="LNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="IncomeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="PasswordLabel" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="LNameField" pref="60" max="32767" attributes="0"/>
-                          <Component id="FNameField" alignment="1" max="32767" attributes="0"/>
-                          <Component id="UserIDField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="PasswordField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="IncomeField" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
               </Group>
-              <EmptySpace pref="199" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="SaveButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <EmptySpace pref="264" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -59,77 +38,14 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Component id="UserTitleLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="UserIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="UserIDField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="PasswordLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="PasswordField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="FNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="FNameField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="LNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="LNameField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="IncomeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="IncomeField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="SaveButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="248" max="-2" attributes="0"/>
+              <EmptySpace pref="57" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="FNameLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="First Name"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="UserIDLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="User ID"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="PasswordLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Password"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="LNameLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Last Name"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="UserIDField">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UserIDFieldActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="PasswordField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="FNameField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="LNameField">
-    </Component>
-    <Component class="javax.swing.JLabel" name="IncomeLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Income ($)"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="IncomeField">
-    </Component>
     <Component class="javax.swing.JLabel" name="UserTitleLabel">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -138,13 +54,62 @@
         <Property name="text" type="java.lang.String" value="USER"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="SaveButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Save"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveButtonActionPerformed"/>
-      </Events>
-    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="rows" type="int" value="6"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="UserIDLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="User ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="UserIDField">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="UserIDFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="FNameLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="First Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="FNameField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="LNameLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Last Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="LNameField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="PasswordLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Password"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="PasswordField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="IncomeLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Income ($)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="IncomeField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+        </Component>
+        <Component class="javax.swing.JButton" name="SaveButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

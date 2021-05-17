@@ -27,14 +27,24 @@ public class DashboardFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        DashboardLabel = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         UserButton = new javax.swing.JButton();
         CategoryButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         TransactionButton = new javax.swing.JButton();
-        DashboardLabel = new javax.swing.JLabel();
         TransactionButton1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        DashboardLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        DashboardLabel.setText("DASHBOARD");
+
+        jPanel1.setLayout(new java.awt.GridLayout(4, 2));
 
         UserButton.setText("User");
         UserButton.addActionListener(new java.awt.event.ActionListener() {
@@ -42,6 +52,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 UserButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(UserButton);
 
         CategoryButton.setText("Category");
         CategoryButton.addActionListener(new java.awt.event.ActionListener() {
@@ -49,6 +60,11 @@ public class DashboardFrame extends javax.swing.JFrame {
                 CategoryButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(CategoryButton);
+        jPanel1.add(jLabel1);
+        jPanel1.add(jLabel2);
+        jPanel1.add(jLabel3);
+        jPanel1.add(jLabel4);
 
         TransactionButton.setText("Transaction");
         TransactionButton.addActionListener(new java.awt.event.ActionListener() {
@@ -56,9 +72,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 TransactionButtonActionPerformed(evt);
             }
         });
-
-        DashboardLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        DashboardLabel.setText("DASHBOARD");
+        jPanel1.add(TransactionButton);
 
         TransactionButton1.setText("Transaction History");
         TransactionButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -66,6 +80,7 @@ public class DashboardFrame extends javax.swing.JFrame {
                 TransactionButton1ActionPerformed(evt);
             }
         });
+        jPanel1.add(TransactionButton1);
 
         jButton1.setText("Log Out");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -79,36 +94,27 @@ public class DashboardFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(157, 157, 157)
-                .addComponent(DashboardLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(UserButton, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(CategoryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(TransactionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TransactionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DashboardLabel)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(173, 173, 173)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(24, 24, 24)
                 .addComponent(DashboardLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(UserButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CategoryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TransactionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TransactionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(57, 57, 57)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addGap(86, 86, 86)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
@@ -186,5 +192,10 @@ public class DashboardFrame extends javax.swing.JFrame {
     private javax.swing.JButton TransactionButton1;
     private javax.swing.JButton UserButton;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

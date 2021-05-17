@@ -27,39 +27,54 @@ public class UserFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        FNameLabel = new javax.swing.JLabel();
+        UserTitleLabel = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         UserIDLabel = new javax.swing.JLabel();
-        PasswordLabel = new javax.swing.JLabel();
-        LNameLabel = new javax.swing.JLabel();
         UserIDField = new javax.swing.JTextField();
-        PasswordField = new javax.swing.JTextField();
+        FNameLabel = new javax.swing.JLabel();
         FNameField = new javax.swing.JTextField();
+        LNameLabel = new javax.swing.JLabel();
         LNameField = new javax.swing.JTextField();
+        PasswordLabel = new javax.swing.JLabel();
+        PasswordField = new javax.swing.JTextField();
         IncomeLabel = new javax.swing.JLabel();
         IncomeField = new javax.swing.JTextField();
-        UserTitleLabel = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         SaveButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        FNameLabel.setText("First Name");
+        UserTitleLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        UserTitleLabel.setText("USER");
+
+        jPanel1.setLayout(new java.awt.GridLayout(6, 2));
 
         UserIDLabel.setText("User ID");
-
-        PasswordLabel.setText("Password");
-
-        LNameLabel.setText("Last Name");
+        jPanel1.add(UserIDLabel);
 
         UserIDField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UserIDFieldActionPerformed(evt);
             }
         });
+        jPanel1.add(UserIDField);
+
+        FNameLabel.setText("First Name");
+        jPanel1.add(FNameLabel);
+        jPanel1.add(FNameField);
+
+        LNameLabel.setText("Last Name");
+        jPanel1.add(LNameLabel);
+        jPanel1.add(LNameField);
+
+        PasswordLabel.setText("Password");
+        jPanel1.add(PasswordLabel);
+        jPanel1.add(PasswordField);
 
         IncomeLabel.setText("Income ($)");
-
-        UserTitleLabel.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        UserTitleLabel.setText("USER");
+        jPanel1.add(IncomeLabel);
+        jPanel1.add(IncomeField);
+        jPanel1.add(jLabel1);
 
         SaveButton.setText("Save");
         SaveButton.addActionListener(new java.awt.event.ActionListener() {
@@ -67,6 +82,7 @@ public class UserFrame extends javax.swing.JFrame {
                 SaveButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(SaveButton);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,55 +91,18 @@ public class UserFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(62, 62, 62)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(UserTitleLabel)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(UserIDLabel)
-                            .addComponent(FNameLabel)
-                            .addComponent(LNameLabel)
-                            .addComponent(IncomeLabel)
-                            .addComponent(PasswordLabel))
-                        .addGap(89, 89, 89)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(LNameField, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                            .addComponent(FNameField, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(UserIDField)
-                            .addComponent(PasswordField)
-                            .addComponent(IncomeField))))
-                .addContainerGap(199, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(SaveButton)
-                .addGap(66, 66, 66))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(UserTitleLabel))
+                .addContainerGap(264, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(UserTitleLabel)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(UserIDLabel)
-                    .addComponent(UserIDField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PasswordLabel)
-                    .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FNameLabel)
-                    .addComponent(FNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LNameLabel)
-                    .addComponent(LNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(IncomeLabel)
-                    .addComponent(IncomeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(SaveButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(57, Short.MAX_VALUE))
         );
 
         pack();
@@ -191,5 +170,7 @@ public class UserFrame extends javax.swing.JFrame {
     private javax.swing.JTextField UserIDField;
     private javax.swing.JLabel UserIDLabel;
     private javax.swing.JLabel UserTitleLabel;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

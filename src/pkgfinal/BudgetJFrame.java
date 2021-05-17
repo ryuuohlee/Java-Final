@@ -27,34 +27,38 @@ public class BudgetJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        UsernameField = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        UserIDLabel = new javax.swing.JLabel();
-        PasswordField = new javax.swing.JTextField();
-        PasswordLabel = new javax.swing.JLabel();
         TitleLabel = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        UserIDLabel = new javax.swing.JLabel();
+        UsernameField = new javax.swing.JTextField();
+        PasswordLabel = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
         LoginButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        TitleLabel.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        TitleLabel.setText("Budget Planner");
+
+        jPanel1.setLayout(new java.awt.GridLayout(3, 2));
+
+        UserIDLabel.setText("User ID");
+        jPanel1.add(UserIDLabel);
 
         UsernameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UsernameFieldActionPerformed(evt);
             }
         });
-
-        UserIDLabel.setText("User ID");
-
-        PasswordField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasswordFieldActionPerformed(evt);
-            }
-        });
+        jPanel1.add(UsernameField);
 
         PasswordLabel.setText("Password");
+        jPanel1.add(PasswordLabel);
 
-        TitleLabel.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        TitleLabel.setText("Budget Planner");
+        jPasswordField1.setText("jPasswordField1");
+        jPanel1.add(jPasswordField1);
+        jPanel1.add(jLabel1);
 
         LoginButton.setText("Login");
         LoginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -62,52 +66,29 @@ public class BudgetJFrame extends javax.swing.JFrame {
                 LoginButtonActionPerformed(evt);
             }
         });
+        jPanel1.add(LoginButton);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(67, 67, 67)
                 .addComponent(TitleLabel)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(121, 121, 121)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(LoginButton)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PasswordLabel)
-                            .addComponent(UserIDLabel))
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(PasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 86, Short.MAX_VALUE)
-                            .addComponent(UsernameField))))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(109, 109, 109)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(67, 67, 67)
+                .addGap(65, 65, 65)
                 .addComponent(TitleLabel)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(UserIDLabel)
-                            .addComponent(UsernameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PasswordLabel)
-                    .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(LoginButton)
-                .addGap(29, 29, 29))
+                .addGap(29, 29, 29)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(146, Short.MAX_VALUE))
         );
 
         pack();
@@ -116,10 +97,6 @@ public class BudgetJFrame extends javax.swing.JFrame {
     private void UsernameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_UsernameFieldActionPerformed
-
-    private void PasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PasswordFieldActionPerformed
 
     private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
         // TODO add your handling code here:
@@ -164,11 +141,12 @@ public class BudgetJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton LoginButton;
-    private javax.swing.JTextField PasswordField;
     private javax.swing.JLabel PasswordLabel;
     private javax.swing.JLabel TitleLabel;
     private javax.swing.JLabel UserIDLabel;
     private javax.swing.JTextField UsernameField;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordField1;
     // End of variables declaration//GEN-END:variables
 }

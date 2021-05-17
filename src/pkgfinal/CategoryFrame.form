@@ -23,109 +23,29 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="CategoryTitle" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Component id="SaveButton" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="MaxBudgeLabel" min="-2" max="-2" attributes="0"/>
-                                      <Component id="CategoryLabel" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="CategoryComboBox" max="32767" attributes="0"/>
-                                      <Component id="MaxBudgetField" max="32767" attributes="0"/>
-                                      <Component id="jTextField1" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="jPanel1" min="-2" pref="331" max="-2" attributes="0"/>
+                  <Component id="CategoryTitle" min="-2" pref="145" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+              <EmptySpace pref="206" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Component id="CategoryTitle" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="CategoryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="CategoryComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="MaxBudgeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="MaxBudgetField" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="38" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Component id="SaveButton" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="186" max="-2" attributes="0"/>
+              <EmptySpace pref="112" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="CategoryLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Category"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="CategoryComboBox">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="5">
-            <StringItem index="0" value="Utilies"/>
-            <StringItem index="1" value="Groceries"/>
-            <StringItem index="2" value="Restaurants"/>
-            <StringItem index="3" value="Gas"/>
-            <StringItem index="4" value="Miscellaneous"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JLabel" name="MaxBudgeLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Max Budget ($)"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="MaxBudgetField">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="1000"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MaxBudgetFieldActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="SaveButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Save"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveButtonActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="CategoryTitle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -134,15 +54,62 @@
         <Property name="text" type="java.lang.String" value="Category"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Total Expenses This Month ($) "/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="850"/>
-      </Properties>
-    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="2"/>
+        <Property name="rows" type="int" value="4"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="CategoryLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Category"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="CategoryComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="5">
+                <StringItem index="0" value="Utilities"/>
+                <StringItem index="1" value="Groceries"/>
+                <StringItem index="2" value="Restaurants"/>
+                <StringItem index="3" value="Gas"/>
+                <StringItem index="4" value="Miscellaneous"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="MaxBudgeLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Max Budget ($)"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="MaxBudgetField">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1000"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MaxBudgetFieldActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+        </Component>
+        <Component class="javax.swing.JButton" name="SaveButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Save"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
